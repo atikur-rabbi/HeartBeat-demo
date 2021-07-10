@@ -37,7 +37,7 @@ class CameraService {
         try {
             cameraId = Objects.requireNonNull(cameraManager).getCameraIdList()[0];
         } catch (CameraAccessException | NullPointerException e) {
-            Log.println(Log.ERROR, "camera", "No access to camera....");
+            Log.println(Log.ERROR, "camera", "No access to camera !....");
         }
 
         try {
